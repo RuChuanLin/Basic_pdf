@@ -22,10 +22,12 @@ players = ['charels', 'martina', 'michael', 'florence', 'eli']
 print("Here are the first three players on my team:")
 for player in players[:3]: #迴圈也可以分段，從最一開始一直到第3號元素以前(不含第3號)
     print(player)
+# ★
 #分段很好用，假設他每一次得到的分數都不一樣，如果要統計他最高的3個分數，可以先用sort按照最高排到最低排序list的元素(就是他的所有得分)，然後再抓出最高的3個分數(最一開始到4號之前不含4號)
 
 # 4.4.3======================================================================================================================
 # ---------------------------------------------------------------------------------------------------------------------
+# ★
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:] #把My_foods的元素，從第一個一直到最後一個，全部指定進去friend_foods中，
 # 其實在這裡「不能」直接打「friend_foods = my_foods」，意思不一樣，這樣會變成把那兩個變數進行關聯，修改任何一個的話那另外一個也會跟著被更動。
@@ -48,6 +50,7 @@ print(my_foods)
 print("\nMy friend's favorite foods are:")
 print(friend_foods)
 # ---------------------------------------------------------------------------------------------------------------------
+# ★
 my_foods = ['pizza', 'falafel', 'carrot cake']
 # 這行不通
 friend_foods = my_foods #把friend_foods關聯到my_foods，這兩個變數都指向同一個list

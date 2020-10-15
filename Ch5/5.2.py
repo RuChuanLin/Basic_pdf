@@ -54,6 +54,26 @@ age_1 = 18
 age_0 >= 21 or age_1 >= 21 # 用or檢查多個條件，至少age_0滿足了
 age_0 = 18
 age_0 >= 21 or age_1 >= 21 # 用or檢查多個條件，兩個都不滿足
+# ----------------------------------------------------------------------
+# ★ and關鍵字如果遇到前面是False就不會再判斷後面，因為結果一定是False
+def condition_a():
+    print("condition_a():True")
+    return True
+def condition_b():
+    print("condition_b():False")
+    return False
+print(condition_a() and condition_b()) # a是True所以會再判斷b是否為True
+print(condition_b() and condition_a()) # b是False所以就不再繼續判斷a了
+# ----------------------------------------------------------------------
+# ★ or關鍵字如果遇到前面是True就不會再判斷後面，因為結果一定是True
+def condition_a():
+    print("condition_a():True")
+    return True
+def condition_b():
+    print("condition_b():False")
+    return False
+print(condition_a() or condition_b()) # a是True所以會就不再繼續判斷b了
+print(condition_b() or condition_a()) # b是False所以會再判斷a是否為True
 # 5.2.6=================================================================
 # ----------------------------------------------------------------------
 requested_topping = ['mushrooms', 'onions', 'pineapple']
