@@ -15,4 +15,4 @@ print(mesage)
 
 # 新功能3
 
-# 另一個bug
+# 修正bug
