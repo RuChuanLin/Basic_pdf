@@ -110,9 +110,11 @@ for language in set(favorite_language.values()): # ★用集合(set)剔除重複
     # set類似list，但是每個元素必須獨一無二
     # 運用set來找出list裡面獨一無二的元素
     print(language.title())
-
-
-
+# ----------------------------------------------------------------------
+# ★集合(set) 的宣告格式
+c = {1, 2, 3, 5, 6, 3, 9, 8, 9}
+print(c)
+print(type(c))
 
 
 
