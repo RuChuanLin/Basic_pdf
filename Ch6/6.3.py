@@ -80,7 +80,7 @@ favorite_language = {
     'phil': 'python',
     }
 
-for name in sorted(favorite_language.keys()): # 指定字典中key的順序，
+for name in sorted(favorite_language.keys()): # ★指定字典中key的順序，
     # 使其按照ABCDE排列
     print(name.title() + ", thank you for taking the poll.")
 
@@ -106,13 +106,15 @@ favorite_language = {
     'phil': 'python',
 }
 print("The following languages have been mentioned:")
-for language in set(favorite_language.values()): # 用集合(set)剔除重複項
+for language in set(favorite_language.values()): # ★用集合(set)剔除重複項
     # set類似list，但是每個元素必須獨一無二
     # 運用set來找出list裡面獨一無二的元素
     print(language.title())
-
-
-
+# ----------------------------------------------------------------------
+# ★集合(set) 的宣告格式
+c = {1, 2, 3, 5, 6, 3, 9, 8, 9}
+print(c)
+print(type(c))
 
 
 
